@@ -1,1 +1,40 @@
-[{"type":"function","name":"frontrun","inputs":[],"outputs":[],"stateMutability":"nonpayable"},{"type":"function","name":"getScore","inputs":[{"name":"_address","type":"address","internalType":"address"}],"outputs":[{"name":"","type":"tuple","internalType":"struct Frontrunner.ParticipantData","components":[{"name":"Address","type":"address","internalType":"address"},{"name":"Wins","type":"uint256","internalType":"uint256"},{"name":"Losses","type":"uint256","internalType":"uint256"}]}],"stateMutability":"view"},{"type":"function","name":"getScores","inputs":[],"outputs":[{"name":"","type":"tuple[]","internalType":"struct Frontrunner.ParticipantData[]","components":[{"name":"Address","type":"address","internalType":"address"},{"name":"Wins","type":"uint256","internalType":"uint256"},{"name":"Losses","type":"uint256","internalType":"uint256"}]}],"stateMutability":"view"}]
+[
+  {
+    "type": "function",
+    "name": "getScore",
+    "inputs": [
+      { "name": "participant", "type": "address", "internalType": "address" }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple",
+        "internalType": "struct Score",
+        "components": [
+          { "name": "wins", "type": "uint128", "internalType": "uint128" },
+          { "name": "losses", "type": "uint128", "internalType": "uint128" }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getScores",
+    "inputs": [
+      { "name": "addresses", "type": "address[]", "internalType": "address[]" }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple[]",
+        "internalType": "struct Score[]",
+        "components": [
+          { "name": "wins", "type": "uint128", "internalType": "uint128" },
+          { "name": "losses", "type": "uint128", "internalType": "uint128" }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  }
+]

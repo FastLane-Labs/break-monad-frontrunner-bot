@@ -10,7 +10,7 @@ import (
 )
 
 var (
-	frontrunnerContractAddress = common.HexToAddress("0x9EaBA701a49adE7525dFfE338f0C7E06Eca7Cf07")
+	frontrunnerContractAddress = common.HexToAddress("0xBce2C725304e09CEf4cD7639760B67f8A0Af5bc4")
 )
 
 func main() {
